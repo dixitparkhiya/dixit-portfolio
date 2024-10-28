@@ -8,10 +8,10 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Marquee from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
-import AnimatedGradientText from "@/components/ui/animated-gradient-text";
 import ShineBorder from "@/components/ui/shine-border";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import EmailCopy from "@/components/EmailCopy";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -35,7 +35,7 @@ export default function Page() {
                 text={
                   <>
                     Hi, 
-                    I'm{' '}
+                    I'm {' '}
                     <span
                       className={cn(
                         `inline animate-gradient retro-2  bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
@@ -275,15 +275,27 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.Instagram.url}
+
+                {/* You’re welcome to connect with me on  {" "}<Link
+                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 retro-2 hover:underline"
                 >
-                  with a direct question on Instagram
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                 LinkedIn
+                </Link> or 
+                email me at <span className="coffee-2">parkhiyadixit@gmail.com</span> with any questions. 
+                I’ll do my best to reply as soon as I can! */}
+                You’re welcome to connect with me on{" "}
+            <Link
+              href={DATA.contact.social.LinkedIn.url}
+              className="text-blue-500 retro-2 hover:underline"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </Link>{" "}
+            or email me at{" "}
+            <EmailCopy />{" "}
+            with any questions. I’ll do my best to reply as soon as I can!
               </p>
               <br/>
             </div>

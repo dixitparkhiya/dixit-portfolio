@@ -104,10 +104,23 @@ export const DATA = {
       dates: "June 2022 - July 2023",
       active: false,
       href : '',
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      // video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/genode.png",
       description:
         "Developed a secure cryptographic wallet using the Genode OS framework. Ported Genode OS for ARM and x86 compatibility and integrated Java-based cryptographic operations.",
-      technologies: ["C++", "Java", "Genode OS", "Docker", "Qemu"],
+      technologies: ["C++","Sculpt","Cryptography", "Java", "Genode OS", "Docker", "Qemu"],
+      links: [
+        {
+          type: "Website",
+          href: "https://genode.org/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/dixitparkhiya/goa-genode",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
     },
     // {
     //   title: "DaaS Dashboard",
@@ -121,26 +134,55 @@ export const DATA = {
     {
       title: "Healthcare Web Portal",
       dates: "Jan 2020 - May 2020",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      // video: "https://cdn.llm.report/openai-demo.mp4",
+      image:'/healthcare.png',
       active: false,
       description: "Developed a web portal for an E-HealthCare system, providing Aadhaar-based patient access. Replaced traditional file systems with a web portal built using Django.",
       technologies: ["Django", "HTML", "CSS", "JavaScript", "Bootstrap"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/dixitparkhiya/Healthcare",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
     },
     {
       title: "Restaurant Review App",
       dates: "May 2018 - June 2018",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      // video: "https://cdn.llm.report/openai-demo.mp4",
+      image:'/mws.jpg',
       active: false,
       description:"Built a restaurant review portal with features like menu, timings, and location.Converted the application to a Progressive Web App (PWA) for enhanced reliability.",
-      technologies: ["JavaScript", "HTML", "CSS", "PWA"],
+      technologies: ["Django","Bootstrap","JavaScript", "HTML", "CSS", "PWA","Google Map APIs"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/dixitparkhiya/mws-restaurant-review-app",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
     },
     {
       title: "PRML Data Contest",
       dates: "Jul 2021 - Nov 2021",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      // video: "https://cdn.llm.report/openai-demo.mp4",
+      image: '/prml.png',
       active: false,
       description: "Built supervised models to predict clinical descriptors using gene expression data for neurodegenerative diseases. Implemented algorithms such as Decision Tree, Adaboost, and Random Forest.",
-      technologies: ["Python", "Machine Learning", "Decision Trees", "Adaboost", "Random Forest"],
+      technologies: ["Python", "Machine Learning", "Decision Trees", "Adaboost", "XGBoost","Random Forest"],
+      links: [
+        {
+          type: "Reference",
+          href: "https://www.cse.iitm.ac.in/~prashla/cs5691_2019.html",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Contest",
+          href: "https://www.kaggle.com/c/prml-data-contest-jul-2021-rb-section/overview",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
     }
   ],
   achievements: [
