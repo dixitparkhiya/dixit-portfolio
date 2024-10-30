@@ -389,4 +389,24 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
   }
+
+  .hover-bg {
+    @apply bg-hover-bg;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  .dl-bg{
+    @apply bg-dl-bg;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
 }

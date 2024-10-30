@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { Download, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Dixit Patel",
@@ -18,6 +18,10 @@ export const DATA = {
     "Docker", "Kubernetes", "Java", "API Development", "RESTful APIs",
     "Genode OS","Linux","Sculpt OS"
   ],
+  resume : {
+    googleDrive: "https://drive.google.com/file/d/1mLGDqK9ulONWXF6OGOCtDM-1Gz-ujbCP/view?usp=drivesdk",
+    downloadPath : "/Dixit_Parhiya_Experience_Resume.pdf"
+  },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/personal", icon: NotebookIcon, label: "Personal" },

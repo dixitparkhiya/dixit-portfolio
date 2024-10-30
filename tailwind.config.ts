@@ -150,6 +150,8 @@ const config = {
   			'coffee-1': 'linear-gradient(258.32deg, #FBFBFD 0%, #E795B7 32.71%, #935893 65.43%, #224D88 98.14%)',
   			'coffee-2': 'linear-gradient(270deg, #FA6E6E 0%, #A3387E 48.88%, #224D88 97.75%)',
   			'coffee-3': 'linear-gradient(99.66deg, #E84E38 10.18%, #BA2CB8 92.84%)',
+			'hover-bg'  :'linear-gradient(90deg,rgba(255,233,244,0.4) 0%,rgba(234,243,255,0.7) 100%)',
+			'dl-bg' : 'linear-gradient(90deg,rgba(203,212,255,0.3) 0%,rgba(226,211,255,0.2) 100%)',
   		}
   	}
   },

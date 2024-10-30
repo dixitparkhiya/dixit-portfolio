@@ -1,8 +1,13 @@
-"use client"; // This marks the component as a Client Component
+"use client";
 import { useState } from "react";
+import { DATA } from "@/data/resume";
 import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip"; // Adjust the import based on your tooltip library
 
-const EmailCopy: React.FC = () => {
+interface EmailCopyProps {
+  className?: string;
+}
+
+const EmailCopy: React.FC<EmailCopyProps> = ({ className }) => {
   const [tooltipText, setTooltipText] = useState<string>("Click to copy");
 
   const copyEmail = () => {
@@ -18,9 +23,9 @@ const EmailCopy: React.FC = () => {
       <TooltipTrigger asChild>
         <span
           onClick={copyEmail}
-          className="cursor-pointer text-blue-500 retro-2 hover:underline"
+          className={`cursor-pointer hover:underline ${className}`} // Apply custom className here
         >
-          parkhiyadixit@gmail.com
+          {DATA.contact.email}
         </span>
       </TooltipTrigger>
       <TooltipContent>

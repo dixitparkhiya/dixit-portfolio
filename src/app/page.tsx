@@ -12,6 +12,7 @@ import ShineBorder from "@/components/ui/shine-border";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import EmailCopy from "@/components/EmailCopy";
+import HireMe from '@/components/hireMe'
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -22,12 +23,6 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-              {/* <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              /> */}
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -49,13 +44,13 @@ export default function Page() {
               />
               <div className="h-1"></div>
               <BlurFadeText
-                className="max-w-[600px] md:text-xl "
+                className="max-w-[600px] md:text-lg "
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 border shadow-lg">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -63,6 +58,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About ✨</h2>
@@ -74,21 +70,13 @@ export default function Page() {
           <div className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
           Experienced Software Developer with an <span className="sunset-2 font-semibold">MTech in Computer Science from IIT Madras</span> and hands-on experience at <span className="sunset-2 font-semibold">Crayon Data</span>. Skilled in React, Next.js, FastAPI, Docker, and Kubernetes. Strong background in building dynamic UIs, backend services, and scalable architectures.
           </div>
-          {/* {[
-        'retro-2', 'floral-1', 'floral-2', 'grass-1', 'grass-2',
-        'grass-3', 'dreamy-1', 'dreamy-2', 'rainbow-1', 'rainbow-2', 'retro-1', 'retro-3', 'sky-1',
-        'sky-2', 'sky-3', 'rose-1', 'rose-2', 'sunset-1', 'sunset-2', 'sunset-3', 'coffee-1', 
-        'coffee-2', 'coffee-3'
-      ].map((gradient, index) => (
-        <div
-          key={index}
-          className={`${gradient} w-full h-16 flex items-center justify-center  text-xl`}
-        >
-          {gradient}: Quick brown fox jumps over the lazy dog...
-        </div>
-      ))} */}
         </BlurFade>
+        
       </section>
+
+      <BlurFade delay={BLUR_FADE_DELAY * 4}>
+        <HireMe/>
+      </BlurFade>
       
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -261,7 +249,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
-      <section id="contact">
+      <section id="contact ">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ShineBorder color={["#A07CFE", "#FE8FB5", "#FFBE7B"]} 
@@ -294,7 +282,7 @@ export default function Page() {
               LinkedIn
             </Link>{" "}
             or email me at{" "}
-            <EmailCopy />{" "}
+            <EmailCopy className="retro-3"/>{" "}
             with any questions. I’ll do my best to reply as soon as I can!
               </p>
               <br/>
