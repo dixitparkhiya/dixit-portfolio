@@ -30,7 +30,7 @@ export default function Page() {
                 text={
                   <>
                     Hi, 
-                    I'm {' '}
+                    I&apos;m {' '}
                     <span
                       className={cn(
                         `inline animate-gradient retro-2  bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
