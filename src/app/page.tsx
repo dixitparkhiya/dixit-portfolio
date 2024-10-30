@@ -23,7 +23,7 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
+              {/* <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
@@ -41,7 +41,24 @@ export default function Page() {
                     
                   </>
                 }
-              />
+              /> */}
+              <BlurFade 
+                delay={BLUR_FADE_DELAY}
+                
+                // yOffset={8}
+              >
+                <div className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Hi, 
+                  I&apos;m {' '}
+                  <span
+                    className={cn(
+                      `inline animate-gradient retro-2  bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+                    )}
+                  >
+                    {DATA.name}
+                  </span>
+                </div>
+              </BlurFade>
               <div className="h-1"></div>
               <BlurFadeText
                 className="max-w-[600px] md:text-lg "
@@ -198,7 +215,7 @@ export default function Page() {
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  video={project.video}
+                  // video={project.video}
                   links={project.links}
                 />
               </BlurFade>

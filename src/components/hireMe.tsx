@@ -31,7 +31,7 @@ const HireMe: React.FC = () => {
       >
         {/* Show text only on medium and larger screens */}
         <span className="hidden sm:inline">View CV</span>
-        <Icons.driveColored className="w-5 h-5 sm:ml-2" />
+        <Icons.googleDrive className="w-5 h-5 sm:ml-2" />
       </Button>
       {/* Show email only on medium and larger screens */}
       <div className="hidden sm:block">
